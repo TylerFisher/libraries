@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Libraries - Tyler Fisher</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <script type="text/javascript" src="//use.typekit.net/drv8ufz.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/yellows.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section>
+                    <h1>Libraries</h1>
+
+                    <p><a href="http://tylerjfisher.com">Tyler Fisher</a> | <a href="http://twitter.com/tylrfishr">@tylrfishr</a></p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>What's a library?</h3>
+
+                    <p class="fragment">Just some JavaScript someone else wrote that makes your life easier.</p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section data-background="#C44D58">
+                    <h2>How do you use a library?</h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>ProTip #1: Always use the minified version.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="img/minified.png">
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>ProTip #2: Inherit your dependencies properly.</p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Order of inheritance</h3>
+
+                    <ol>
+                        <li>jQuery</li>
+                        <li>jQuery plugins (if any)</li>
+                        <li>Other libraries (underscore, d3, etc)</li>
+                        <li>Your custom JavaScript</li>
+                    </ol>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>ProTip #3: Read the docs!</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section data-background="#C44D58">
+                    <h2>When do you use a library?</h2>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Not Invented Here</h3>
+                    <h3>vs.</h3>
+                    <h3>Reinventing the Wheel</h3>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Sometimes, libraries are too complex.</p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Story time!</h2>
+                    <a target="_blank" href="http://apps.npr.org/wolves"><img src="img/wolves.png"></a>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>We started with a library called <a target="_blank" href="https://medium.com/coding-design/9c7fe9db92c7">Fluidbox</a>.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Fluidbox had a lot of code and functionality we weren't using. And it was buggy.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>So we built <a target="_blank" href="https://github.com/nprapps/wolves/blob/master/www/js/app.js#L363">our own</a> lightbox.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <div class="half">
+                        <h2>Pros</h2>
+                        <p>Much less code</p>
+                        <p>Does what we need it to</p>
+                        <p>Not buggy</p>
+                    </div>
+                    <div class="half second-half">
+                        <h2>Cons</h2>
+                        <p>Development time</p>
+                        <p>Not as well tested</p>
+                        <p>Hard to add functionality</p>
+                    </div>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>But...</h2>
+                    <a target="_blank" href="http://apps.npr.org/wolves"><img src="img/borderland.png"></a>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>To achieve the slide approach, we used <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js">a library</a>.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>We tried building our own, but it took too much time.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Instead, we <a target="_blank" href="https://github.com/nprapps/borders-map/commit/4d7dfb7d603ccb2a88256c90781da45584a44a61#diff-a741a1f34957645e1495bfde69fd36eb">altered the code</a> to fit our needs.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <div class="half">
+                        <h2>Pros</h2>
+                        <p>Took less time</p>
+                        <p>Supported experiments</p>
+                    </div>
+                    <div class="half second-half">
+                        <h2>Cons</h2>
+                        <p>Had to fix bugs</p>
+                        <p>Overriding functionality</p>
+                    </div>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>So what do you do?</h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Ask these questions</h3>
+
+                    <ol>
+                        <li>Does the library solve all of your needs?</li>
+                        <li>How well does the library work?</li>
+                        <li>How hard would it be to develop your own version of the library?</li>
+                    </ol>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section data-background="#C44D58">
+                    <h2>Suggestions for libraries</h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>jQuery</h3>
+
+                    <p>Always use jQuery.</p>
+
+                    <p class="small"><a target="_blank" href="http://jquery.com">jquery.com</a></p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Underscore</h3>
+
+                    <p>Use Underscore for manipulating arrays and objects.</p>
+
+                    <p class="small"><a target="_blank" href="http://underscorejs.org">underscorejs.org</a></p>
+                </section>
+
+                <section>
+                    <h3>Bootstrap</h3>
+
+                    <p>Bootstrap's JavaScript has some nice functionality, such as <a target="_blank" href="http://getbootstrap.com/javascript/#scrollspy">Scrollspy</a>.</p>
+
+                    <p class="small"><a target="_blank" href="http://getbootstrap.com">getbootstrap.com</a></p>
+                </section>
+
+                <section>
+                    <h3>d3.js</h3>
+
+                    <p>d3.js is the best data visualization tool around. However, it's <em>super</em> hard to use.</p>
+
+                    <p class="small"><a target="_blank" href="http://d3js.org">d3js.org</a></p>
+                </section>
+
+                <section>
+                    <h3>Highcharts</h3>
+
+                    <p>Highcharts is an easier, though less flexible, charting library.</p>
+
+                    <p class="small"><a target="_blank" href="http://www.highcharts.com/">highcharts.com</a></p>
+                </section>
+
+                <section>
+                    <h3>Leaflet</h3>
+
+                    <p>Use Leaflet instead of Google Maps for map-based data.</p>
+
+                    <p class="small"><a target="_blank" href="http://leafletjs.com/">leafletjs.com</a></p>
+                </section>
+
+                <section>
+                    <h3>FitVids</h3>
+
+                    <p>Use FitVids to make your video embeds play nice with responsive designs.</p>
+
+                    <p class="small"><a target="_blank" href="http://fitvidsjs.com/">fitvidsjs.com</a></p>
+                </section>
+
+                <section>
+                    <h3>Unveil</h3>
+
+                    <p>If you have a long page with a lot of images, Unveil will let you "lazy-load" those images.</p>
+
+                    <p class="small"><a target="_blank" href="https://github.com/luis-almeida/unveil">github.com/luis-almeida/unveil</a></p>
+                </section>
+
+                <section>
+                    <h3>Spreadsheets</h3>
+
+                    <p>Come see me. There's a workshop later.</p>
+                </section>
+
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
